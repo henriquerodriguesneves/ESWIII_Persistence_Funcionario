@@ -19,7 +19,7 @@ public class PrincipalAtendimento {
 		at.setId(1);
 		
 		Cliente cli = new Cliente();
-		cli.setCpf("12345678900");
+		cli.setCpf("90856483799");
 
 		LocalDateTime dataAtend = LocalDateTime.now();
 		
@@ -29,10 +29,10 @@ public class PrincipalAtendimento {
 		atend.setDataHoraAtendimento(dataAtend);
 		
 		try {
-//			salvarAtendimento(atendCont, atend);
-			modificarAtendimento(atendCont, atend);
+			salvarAtendimento(atendCont, atend);
+//			modificarAtendimento(atendCont, atend);
 //			removerAtendimento(atendCont, atend);
-			consultarAtendimento(atendCont, atend);
+//			consultarAtendimento(atendCont, atend);
 //			listarAtendimento(atendCont);
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -53,13 +53,13 @@ public class PrincipalAtendimento {
 		atendimentos.forEach(a -> System.out.println(a));
 	}
 
-	private static void insereMuitosAtendimentos(AtendimentoController atendCont) throws SQLException {
+//	private static void insereMuitosAtendimentos(AtendimentoController atendCont) throws SQLException {
 		
 //		atendCont.salvar(at);
 //		atendCont.salvar(at1);
 //		atendCont.salvar(at2);
 		
-	}
+//	}
 
 	private static void removerAtendimento(AtendimentoController atendCont, Atendimento atend) throws SQLException {
 		Atendimento atend1 = atend;

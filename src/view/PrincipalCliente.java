@@ -19,10 +19,11 @@ public class PrincipalCliente {
 		cli.setPronomeTratamento("Sr.");
 
 		try {
+			insereMuitosCliente(cCont);
 //			salvarCliente(cCont, cli);
 //			modificarCliente(cCont, cli);
 //			removerCliente(cCont, cli);
-			listarCliente(cCont);
+//			listarCliente(cCont);
 			
 		} catch (SQLException e) {
 			e.printStackTrace();
@@ -39,25 +40,25 @@ public class PrincipalCliente {
 
 	private static void insereMuitosCliente(ClienteController cCont) throws SQLException {
 		Cliente cli = new Cliente();
-		cli.setCpf("12345678900");
-		cli.setNome("Fulano de Tal");
-		cli.setCelular("11922222222");
-		cli.setEmail("fulano@email.com");
+		cli.setCpf("23837473687");
+		cli.setNome("Joao Silva");
+		cli.setCelular("11928372837");
+		cli.setEmail("joao@email.com");
 		cli.setPronomeTratamento("Sr.");
 		
 		Cliente cli1 = new Cliente();
-		cli1.setCpf("23456789122");
-		cli1.setNome("Beltrano de Tal");
-		cli1.setCelular("11922223333");
-		cli1.setEmail("beltrano@email.com");
-		cli1.setPronomeTratamento("Sr.");
+		cli1.setCpf("90856483799");
+		cli1.setNome("Maria Silva");
+		cli1.setCelular("1232439876");
+		cli1.setEmail("maria@email.com");
+		cli1.setPronomeTratamento("Sra.");
 		
 		Cliente cli2 = new Cliente();
-		cli2.setCpf("34567891555");
-		cli2.setNome("Cicrana de Tal");
-		cli2.setCelular("11922224444");
-		cli2.setEmail("cicrana@email.com");
-		cli2.setPronomeTratamento("Sra.");
+		cli2.setCpf("89757437456");
+		cli2.setNome("Maria das Dores");
+		cli2.setCelular("11938472634");
+		cli2.setEmail("madores@email.com");
+		cli2.setPronomeTratamento("Srta.");
 		
 		cCont.salvar(cli);
 		cCont.salvar(cli1);
